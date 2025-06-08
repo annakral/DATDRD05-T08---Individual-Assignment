@@ -1,0 +1,3 @@
+https://recipenlg.cs.put.poznan.pl/dataset
+
+Due to the large size of the dataset it was not possible to upload it directly to GitHub.
