@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Kitchen Helper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="kitchen-container">
+        <div class="kitchen-counter">
+            <!-- Cat Chef (cooking helper) -->
+            <div id="cat" class="interactive-item">
+                <img src="assets/cat.png" alt="Cat Chef">
+                <div class="item-label">Your Cooking Helper</div>
+            </div>
+            
+            <!-- Cookbook -->
+            <div id="cookbook" class="interactive-item">
+                <img src="assets/cookbook.jpg" alt="Cookbook">
+                <div class="item-label">Your Recipes</div>
+            </div>
+        </div>
+        
+        <!-- Chat modal - initially hidden -->
+        <div id="chat-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close-btn" id="close-chat">&times;</span>
+                    <h2>Cooking Assistant</h2>
+                </div>
+                <div class="modal-body">
+                    <div id="chat-messages"></div>
+                    <div class="chat-input-area">
+                        <input type="text" id="chat-input" placeholder="Ask anything about cooking...">
+                        <button id="send-message">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Recipe book modal - initially hidden -->
+        <div id="recipes-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close-btn" id="close-recipes">&times;</span>
+                    <h2>Recipe Book</h2>
+                </div>
+                <div class="modal-body">
+                    <button id="add-recipe">Add New Recipe</button>
+                    <div id="recipe-list"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Recipe form modal - initially hidden -->
+        <div id="recipe-form-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close-btn" id="close-recipe-form">&times;</span>
+                    <h2 id="recipe-form-title">Add New Recipe</h2>
+                </div>
+                <div class="modal-body">
+                    <form id="recipe-form">
+                        <input type="hidden" id="recipe-id">
+                        <div class="form-group">
+                            <label for="recipe-name">Recipe Name</label>
+                            <input type="text" id="recipe-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="recipe-ingredients">Ingredients</label>
+                            <textarea id="recipe-ingredients" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="recipe-instructions">Instructions</label>
+                            <textarea id="recipe-instructions" required></textarea>
+                        </div>
+                        <button type="submit">Save Recipe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
