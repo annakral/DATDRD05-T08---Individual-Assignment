@@ -38,5 +38,14 @@ The local_llm_development/ folder includes a jupyter notebook with the whole pro
 - Deployment: The model and RAG system is used in the application. The application is still in the development process and cannot be deployed yet.
 
 ---
-## Models Folder
+## Mistral Model
 The local model (Mistral 7B Instruct) was too large to upload directly into GitHub, so in this folder a file with a link to download it can be found.
+
+---
+## Future Improvements
+- Model Tuning - improve its speed
+- Add chat history, multiple chats option and session persistence
+- Add new features - starting menu, cooking timer, shopping list
+- Add cozy sounds and music
+- Package into a standalone desktop installer
+
